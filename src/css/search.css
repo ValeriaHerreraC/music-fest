@@ -1,0 +1,21 @@
+.contSearch{
+  background-color: rgba(22, 22, 36, 0.89);
+  width: 90%;
+  height: 55px;
+  border-radius: 34px;
+  display: flex;
+}
+.lupa{
+  margin: 10px 10px 0 10px;
+  width: 30px;
+  height: 30px;
+  filter: invert(1);
+}
+.inputSearch{
+  background: none;
+  border: none;
+  width: 80%;
+  height: 100%;
+  color: white;
+  font-size: 18px;
+}

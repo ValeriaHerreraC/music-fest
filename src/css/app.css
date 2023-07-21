@@ -1,0 +1,91 @@
+*{
+  margin: 0;
+}
+body{
+  background-color: rgb(8, 8, 17);
+}
+
+.main{
+  width: 100vw;
+  height: 100vh;
+}
+.sec1{
+  background-image: url("../public/music.jpg");
+  width: 100%;
+  height: 600px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.festTitle{
+  width: 61%;
+  height: 388px;
+  position: absolute;
+  top: 146px;
+  left: 0px;
+  background-color: #111127d6;
+  color: #ff0044;
+  font-family: system-ui;
+  font-size: 136px;
+  padding: 25px 0 0 56px;
+  border-radius: 0 180px 180px 0;
+}
+.subtArtists{
+  color: white;
+  font-family: system-ui;
+  font-size: 30px;
+  margin: 90px 0 0 100px;
+}
+.subtCities{
+  color: white;
+  font-family: system-ui;
+  font-size: 30px;
+  margin: 90px 0 0 100px;
+}
+.contCities{
+  display: flex;
+  justify-content: space-around;
+}
+.cities{
+  background-color: #ff0044;
+  width: 19%;
+  height: 110px;
+  margin: 50px 0px 30px 30px;
+  color: white;
+  font-size: 33px;
+  padding: 29px 0 0 31px;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 40px 0 40px 0;
+  position: relative;
+}
+.ubi{
+  position: absolute;
+  top: 42px;
+  right: 40px;
+  width: 18%;
+  filter: invert(2);
+}
+
+@media only screen and (max-width: 600px) {
+  .sec1{
+    background-image: none;
+  }
+  .festTitle{
+    width: 100%;
+    top: 100px;
+    padding: 71px 0 0 10px;
+    font-size: 93px;
+  }
+  .subtArtists{
+    margin: -93px 0 0 26px;
+  }
+  .subtCities{
+    margin: 90px 0 0 20px;
+  }
+  .contCities{
+    display: inline;
+  }
+  .cities{
+    width: 300px;
+    margin: 30px 0 0 57px;
+  }
+}

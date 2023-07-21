@@ -1,0 +1,41 @@
+.artistCard{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.card{
+  background-color: #0c0c19b0;
+  width: 19%;
+  height: 320px;
+  border-radius: 8px;
+  margin: 28px 0 0 69px;
+}
+.image{
+  width: 100%;
+  height: 250px;
+}
+.name{
+  color: white;
+  font-size: 30px;
+  margin: -9px 0 0 20px;
+  font-weight: 800;
+}
+
+@media only screen and (max-width: 600px) {
+  .artistCard{
+    gap: 0px;
+  }
+  .card{
+    width: 164px;
+    height: 220px;
+    margin: 25px 0 0 31px;
+  }
+  .image{
+    height: 163px;
+  }
+  .name{
+    font-size: 24px;
+    margin: 0px 0 0px 4px;
+  }
+}

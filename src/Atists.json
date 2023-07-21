@@ -1,0 +1,128 @@
+[
+  {
+    "id":1,
+    "grupo_musical": {
+      "nombre":"Maluma",
+      "imagen":"https://album.mediaset.es/eimg/2023/02/01/maluma_06ab.jpg?w=1200&h=900",
+      "descripcion": "Joven cantante antioqueño de gran reconocimiento en el género del Reggaeton. El nombre de Maluma fue compuesto por las dos primeras letras de los nombres de su madre (Marlli), su padre (Luis) y su hermana (Manuela)."
+    },
+    "ciudad": "Medellín",
+    "interprete": {
+      "nombre":"Juan Luis",
+      "apellido":"Londoño Arias"
+    },
+    "instrumento": {
+      "nombre":"Voz",
+      "tipo":"Voz"
+    },
+    "genero_musical": "Reggaeton"
+  },
+  {
+    "id":2,
+    "grupo_musical": {
+      "nombre":"Feid",
+      "imagen":"https://yt3.googleusercontent.com/GUW78kIdMM2mVjl-c1rkSD8DqNYSRZAfTUTie3j4xKFN6agTpdb9UiMDGwQB2yuoDpKB1a8QNn8=s900-c-k-c0x00ffffff-no-rj",
+      "descripcion":"Salomón Villada Hoyos conocido por su nombre artístico Feid, es un cantante, compositor y productor musical colombiano. Durante su trayectoria musical ha trabajado con varios artistas cómo Daddy Yankee, J Balvin, J Quiles, Manuel Turizo, Sebastián Yatra, Nacho, Maluma, Karol G, Yandel, entre otros."
+    },
+    "ciudad": "Medellín",
+    "interprete": {
+      "nombre":"Salomón",
+      "apellido":"Villada"
+    },
+    "instrumento": {
+      "nombre":"Voz",
+      "tipo":"Voz"
+    },
+    "genero_musical": "Reaggaeton"
+  },
+  {
+    "id":3,
+    "grupo_musical": {
+      "nombre":"Carlos Vives",
+      "imagen":"https://www.cmtv.com.ar/imagenes_artistas/301.webp",
+      "descripcion":"Carlos Alberto Vives Restrepo, conocido como Carlos Vives, es un cantautor, productor discográfico, filántropo y actor colombiano, uno de los grandes pioneros del vallenato colombiano. Ha ganado dos premios Grammy y quince premios Grammy Latinos."
+    },
+    "ciudad": "Santa Marta",
+    "interprete": {
+      "nombre":"Carlos Alberto",
+      "apellido":"Vives Restrepo"
+    },
+    "instrumento": {
+      "nombre":"Voz, guitarra",
+      "tipo":"voz, guitarra"
+    },
+    "genero_musical": "Pop latino, vallenato, cumbia"
+  },
+  {
+    "id":4,
+    "grupo_musical": {
+      "nombre":"Rosalía",
+      "imagen":"https://hips.hearstapps.com/hmg-prod/images/rosalia-performs-on-stage-during-the-motomami-tour-at-news-photo-1689581319.jpg?crop=0.66656xw:1xh;center,top&resize=1200:*",
+      "descripcion":"Rosalía Vila Tobella, ​conocida simplemente como Rosalía, es una cantante, compositora, productora discográfica, artista, actriz y musico española.​​ Nacida y criada en las afueras de Barcelona, ​​ha sido descrita como una «estrella del pop atípica» debido a sus estilos musicales que doblan los géneros."
+    },
+    "ciudad": "San Cugat del Vallés, España",
+    "interprete": {
+      "nombre":"Rosalía",
+      "apellido":"Vila Tobella"
+    },
+    "instrumento": {
+      "nombre":"Voz",
+      "tipo":"Voz"
+    },
+    "genero_musical": "Pop"
+  },
+  {
+    "id":5,
+    "grupo_musical": {
+      "nombre":"Manuel Turizo",
+      "imagen":"https://akamai.sscdn.co/uploadfile/letras/fotos/9/c/e/8/9ce8eb39209c4be4087f4b97dac92110.jpg",
+      "descripcion":"Manuel Turizo Zapata, o simplemente Manuel Turizo, es un cantante y compositor colombiano.​Principalmente conocido por su canción «Una Lady como tú», tema con el cual logró obtener mayor reconocimiento internacional en América Latina, España, Italia y Portugal."
+    },
+    "ciudad": "Montería",
+    "interprete": {
+      "nombre":"Manuel",
+      "apellido":"Turizo Zapata"
+    },
+    "instrumento": {
+      "nombre":"Voz, guitarra, piano",
+      "tipo":"Voz, guitarra, piano"
+    },
+    "genero_musical": "Urbano latino"
+  },
+  {
+    "id":6,
+    "grupo_musical": {
+      "nombre":"Romeo Santos",
+      "imagen":"https://caracoltv.brightspotcdn.com/dims4/default/f9b4738/2147483647/strip/false/crop/481x529+0+0/resize/1200x1319!/quality/90/?url=http%3A%2F%2Fcaracol-brightspot.s3.amazonaws.com%2F2b%2F25%2Ffbc1b20144b189bb1fb4663a9c2e%2Fromeo-santos.jpg",
+      "descripcion":"Anthony Santos, ​ conocido artísticamente como Romeo Santos, es un cantante estadounidense. Es considerado en la mayor parte de América como el Rey de la Bachata, ​​ por ser el líder, vocalista y compositor principal de la agrupación Aventura."
+    },
+    "ciudad": "El Bronx, Nueva York, Estados Unidos",
+    "interprete": {
+      "nombre":"Anthony",
+      "apellido":"Santos"
+    },
+    "instrumento": {
+      "nombre":"Voz",
+      "tipo":"Voz"
+    },
+    "genero_musical": "Bachata"
+  },
+  {
+    "id":7,
+    "grupo_musical": {
+      "nombre":"Ricardo Arjona",
+      "imagen":"https://upload.wikimedia.org/wikipedia/commons/1/14/Ricardo_Arjona_-_Arjoneando.jpg",
+      "descripcion":"Édgar Ricardo Arjona Morales es un cantante, arreglista y productor musical guatemalteco. Su estilo musical varía desde baladas a pop latino, rock, pop rock, música cubana, entre otros. Ha vendido más de 80 millones de copias de discos a lo largo de su carrera.​"
+    },
+    "ciudad": "Jocotenango, Guatemala",
+    "interprete": {
+      "nombre":"Édgar Ricardo",
+      "apellido":"Arjona Morales"
+    },
+    "instrumento": {
+      "nombre":"Voz, guitarra, piano, armónica",
+      "tipo":"Voz, guitarra, piano, armónica"
+    },
+    "genero_musical": "Pop"
+  }
+]
