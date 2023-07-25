@@ -11,15 +11,25 @@ export const Artists = (props) => {
 
   return (
     <>
-    <div className="card" onClick={handleShow}>
-      <img src={props.image} className="card-img-top image" />
-      <div className="card-body">
-        <p className="card-text name">{props.name}</p>
-      </div>
-    </div>
-    {/*<Modal show={show} handleClose={handleClose}/> */}
-    {show && <Modal handleClose={handleClose}/>}
+    <tr className='filas'>
+      <th scope="row">
+        {props.id}
+      </th>
+      <td>
+        <img className='image' src={props.image} onClick={handleShow}/>
+        {show && <Modal isOpen={show} closeModal={handleClose}/>}
+      </td>
+      <td>
+        <p className='name'>{props.name}</p>
+      </td>
+      <td>
+        <img className='edit' src='../public/editar.png'/>
+        <img className='delete' src='../public/eliminar.png'/>
+      </td>
+    </tr>
+    
     </>
+    
   )
 }
 ;

@@ -2,12 +2,13 @@ import React from 'react'
 import data from "../Atists.json"
 import { ModalContent } from "./ModalContent";
 
-export const Modal = (show, handleClose) => {
+export const Modal = ({closeModal}) => {
 
   return (
-    <div className="modal-dialog modal-fullscreen-sm-down" show={show} onHide={handleClose}>
-      {data.map(artists => 
+    <div className="modal-dialog modal-fullscreen-sm-down modalc">
+      {data.artists.map(artists => 
         <ModalContent
+          closeModal={closeModal}
           key= {artists.id}
           name = {artists.grupo_musical.nombre}
           image={artists.grupo_musical.imagen}

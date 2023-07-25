@@ -4,4 +4,11 @@
   height: 280px;
   width: 493px;
   padding: 5px 14px 12px 10px;
+  z-index: 1;
+}
+.agregarPopUp{
+  height: 662px;
+  position: absolute;
+  top: 5px;
+  right: 117px;
 }

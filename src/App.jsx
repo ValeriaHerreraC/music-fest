@@ -18,7 +18,7 @@ export const App = () => {
       <div className="sec3">
         <div className="artistCards" >
           <ArtistsContainer >
-            {data.map (artists => 
+            {data.artists.map (artists => 
               <Artists
                 key= {artists.id}
                 name = {artists.grupo_musical.nombre}
