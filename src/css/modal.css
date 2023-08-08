@@ -1,4 +1,4 @@
-.popup{
+.popup {
   background-color: #171720;
   color: white;
   height: 280px;
@@ -6,9 +6,24 @@
   padding: 5px 14px 12px 10px;
   z-index: 1;
 }
-.agregarPopUp{
-  height: 662px;
-  position: absolute;
-  top: 5px;
-  right: 117px;
+.agregarPopUp {
+  height: 569px;
+  position: fixed;
+  top: 50px;
+  right: 20%;
+  overflow-y: auto;
+}
+.margen {
+  margin-top: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  .agregarPopUp {
+    height: 569px;
+    width: 394px;
+    position: fixed;
+    top: 144px;
+    right: 3%;
+    overflow-y: auto;
+  }
 }

@@ -1,86 +1,114 @@
-.artistCard{
+.artistCard {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
   gap: 30px;
 }
-.card{
+.card {
   background-color: #0c0c19b0;
   width: 19%;
   height: 320px;
   border-radius: 8px;
   margin: 28px 0 0 69px;
 }
-.image{
+.image {
   width: 90%;
-  height: 220px;
+  height: 200px;
   cursor: pointer;
 }
-.name{
+.name {
   color: white;
   font-size: 30px;
   margin: -9px 0 0 20px;
   font-weight: 800;
 }
-.edit{
+.edit {
   width: 40px;
   margin-right: 15px;
   filter: invert(1);
   cursor: pointer;
 }
-.delete{
+.delete {
   width: 40px;
   cursor: pointer;
 }
-.filas{
+.filas {
   background-color: #220a2ba6;
 }
-.table{
+.table {
   margin: auto;
-  width: 70%;
+  width: 67%;
   margin-top: 45px;
 }
-.agregar{
+.agregar {
   display: flex;
   background-color: rgb(66 73 81 / 56%);
   border: none;
   border-radius: 28px;
-  width: 190px;
+  width: 50%;
   height: 50px;
+  position: absolute;
+  top: 5px;
+  left: 25px;
 }
-.agregar img{
+.agregar img {
   width: 48px;
   filter: invert(1);
 }
-.agregar p{
+.agregar p {
   color: white;
   font-size: 18px;
   font-weight: 600;
   margin-top: 9px;
 }
-.body{
+.body {
   position: relative;
 }
-.modalc{
+.modalc {
   position: absolute;
   top: -52px;
   left: 80px;
 }
+.search {
+  position: relative;
+}
+.agregarDiv {
+  position: relative;
+}
 
 @media only screen and (max-width: 600px) {
-  .artistCard{
+  .artistCard {
     gap: 0px;
   }
-  .card{
+  .card {
     width: 164px;
     height: 220px;
     margin: 25px 0 0 31px;
   }
-  .image{
+  .image {
     height: 163px;
   }
-  .name{
+  .name {
     font-size: 24px;
     margin: 0px 0 0px 4px;
+  }
+  .agregar {
+    display: flex;
+    background-color: rgb(66 73 81 / 56%);
+    border: none;
+    border-radius: 28px;
+    width: 41%;
+    height: 50px;
+    position: absolute;
+    top: 26px;
+    left: 28px;
+  }
+  .agregar p {
+    display: none;
+  }
+  .table {
+    margin: auto;
+    width: 94%;
+    margin-top: 5px;
   }
 }

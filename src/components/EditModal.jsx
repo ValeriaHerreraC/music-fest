@@ -1,67 +1,65 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { useDispatch } from "react-redux";
-import { agregarArtista } from "../features/artistsSlice";
-import "../css/modal.css";
+import { editarArtista } from "../features/artistsSlice";
 
-export const AgregarModal = ({ closeModal }) => {
-  const [agregar, setAgregar] = useState({
-    nombreMusical: "",
-    imagen: "",
-    descripcion: "",
-    ciudadNacimiento: "",
-    nombre: "",
-    apellido: "",
-    generoMusical: "",
-    instrumentoNombre: "",
-    instrumentoTipo: "",
-  });
-
+export const EditModal = ({ closeEditModal, artist }) => {
   const dispatch = useDispatch();
 
+  const [edit, setEdit] = useState({
+    id: artist.id,
+    nombreMusical: artist.grupo_musical.nombre,
+    imagen: artist.grupo_musical.imagen,
+    descripcion: artist.grupo_musical.descripcion,
+    ciudadNacimiento: artist.ciudad,
+    nombre: artist.interprete.nombre,
+    apellido: artist.interprete.apellido,
+    generoMusical: artist.genero_musical,
+    instrumentoNombre: artist.instrumento.nombre,
+    instrumentoTipo: artist.instrumento.tipo,
+  });
+
   const handleChange = (e) => {
-    setAgregar({
-      ...agregar,
+    setEdit({
+      ...edit,
       [e.target.name]: e.target.value,
     });
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    agregar.id = new Date().getTime();
-    const newArtist = {
-      id: new Date().getTime(),
+    const editedArtist = {
+      id: edit.id,
       grupo_musical: {
-        nombre: agregar.nombreMusical,
-        imagen: agregar.imagen,
-        descripcion: agregar.descripcion,
+        nombre: edit.nombreMusical,
+        imagen: edit.imagen,
+        descripcion: edit.descripcion,
       },
-      ciudad: agregar.ciudadNacimiento,
+      ciudad: edit.ciudadNacimiento,
       interprete: {
-        nombre: agregar.nombre,
-        apellido: agregar.apellido,
+        nombre: edit.nombre,
+        apellido: edit.apellido,
       },
       instrumento: {
-        nombre: agregar.instrumentoNombre,
-        tipo: agregar.instrumentoTipo,
+        nombre: edit.instrumentoNombre,
+        tipo: edit.instrumentoTipo,
       },
-      genero_musical: agregar.generoMusical,
+      genero_musical: edit.generoMusical,
     };
-    dispatch(agregarArtista(newArtist));
+    dispatch(editarArtista(editedArtist));
   };
-
   return (
     <div className="modal-dialog">
       <div className="modal-content popup agregarPopUp">
         <div className="modal-header">
           <h5 className="modal-title" id="exampleModalLabel">
-            Agregar un artista
+            Editar artista
           </h5>
           <button
             type="button"
             className="btn-close"
             data-bs-dismiss="modal"
             aria-label="Close"
-            onClick={closeModal}
+            onClick={closeEditModal}
           ></button>
         </div>
         <div className="modal-body">
@@ -75,6 +73,7 @@ export const AgregarModal = ({ closeModal }) => {
                 type="text"
                 className="form-control"
                 onChange={handleChange}
+                value={edit.nombreMusical}
               />
             </div>
             <div className="mb-3">
@@ -87,6 +86,7 @@ export const AgregarModal = ({ closeModal }) => {
                 className="form-control"
                 placeholder="Url"
                 onChange={handleChange}
+                value={edit.imagen}
               />
             </div>
             <div className="mb-3">
@@ -98,6 +98,7 @@ export const AgregarModal = ({ closeModal }) => {
                 type="text"
                 className="form-control"
                 onChange={handleChange}
+                value={edit.descripcion}
               />
             </div>
             <div className="mb-3">
@@ -109,6 +110,7 @@ export const AgregarModal = ({ closeModal }) => {
                 type="text"
                 className="form-control"
                 onChange={handleChange}
+                value={edit.ciudadNacimiento}
               />
             </div>
             <div className="mb-3">
@@ -121,6 +123,7 @@ export const AgregarModal = ({ closeModal }) => {
                 type="text"
                 className="form-control"
                 onChange={handleChange}
+                value={edit.nombre}
               />
               <input
                 placeholder="Apellidos"
@@ -128,6 +131,7 @@ export const AgregarModal = ({ closeModal }) => {
                 type="text"
                 className="form-control margen"
                 onChange={handleChange}
+                value={edit.apellido}
               />
             </div>
             <div className="mb-3">
@@ -140,6 +144,7 @@ export const AgregarModal = ({ closeModal }) => {
                 type="text"
                 className="form-control "
                 onChange={handleChange}
+                value={edit.instrumentoNombre}
               />
               <input
                 placeholder="Tipo de instrumento"
@@ -147,6 +152,7 @@ export const AgregarModal = ({ closeModal }) => {
                 type="text"
                 className="form-control margen"
                 onChange={handleChange}
+                value={edit.instrumentoTipo}
               />
             </div>
             <div className="mb-3">
@@ -158,6 +164,7 @@ export const AgregarModal = ({ closeModal }) => {
                 type="text"
                 className="form-control"
                 onChange={handleChange}
+                value={edit.generomusical}
               />
             </div>
             <button type="submit" className="btn btn-primary">

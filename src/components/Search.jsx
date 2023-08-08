@@ -1,33 +1,35 @@
-import React, {useState} from 'react'
-import data from "../Atists.json"
-import "../css/search.css"
-import { ArtistsContainer } from './ArtistsContainer';
+import React, { useEffect, useState } from "react";
+import { useSelector } from "react-redux";
+import "../css/search.css";
 
-export const Search = () => {
-
-  const [search, setSearch] = useState ("");
+export const Search = ({onFilter}) => {
+  const [search, setSearch] = useState("");
+  const dataArtists = useSelector((state) => state.artists);
+  useEffect(() => {
+    if (search.length > 0) {
+      const filter = dataArtists.filter((artist) =>
+      artist.grupo_musical.nombre.toLowerCase().includes(search.toLowerCase()),
+    )
+    onFilter(filter);
+    }else{
+      onFilter(dataArtists);
+    }
+  },[search])
 
   const handleChange = (e) => {
-    setSearch (e.target.value);
-    console.log(e.target.value);
+    setSearch(e.target.value);
   };
 
-  const results = !search ? <ArtistsContainer/> : data.filter((artists) => artists.name.toLowerCase().includes(search.toLowerCase()))
-
   return (
-    <div className='contSearch'>
+    <div className="contSearch">
       <img className="lupa" src="../public/lupa.png" />
       <input
-        value = {search} 
-        onChange = {handleChange}
+        value={search}
+        onChange={handleChange}
         type="search"
         className="inputSearch"
         placeholder="Search"
       />
-      {search.length > 0 && results.map((data) => (
-        <ArtistsContainer/>
-
-      ))} 
     </div>
-  )
-}
+  );
+};
